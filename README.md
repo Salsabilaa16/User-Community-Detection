@@ -51,10 +51,20 @@ File yang tidak digunakan:
   - Neo4j Desktop 2.x (instance lokal)
   - Cypher 25
   - Neo4j Graph Data Science (GDS) Library
+    
       gds.nodeSimilarity  : perhitungan kemiripan antar user
+    
       gds.louvain         : community detection metode Louvain
+    
       gds.leiden          : community detection metode Leiden
+    
+  - Python 
+  
+      Pandas : Pengolahan dan manipulasi data.
 
+      NetworkX : Analisis struktur jaringan graf.
+
+      PyVis : Membuat visualisasi graf interaktif dalam format HTML.
 
 ## MODEL GRAF
 
@@ -138,14 +148,14 @@ Community Detection
 
 ### Community detection
   Metode    Modularity
-  Louvain   0,5657
-  Leiden    0,5745
+  - Louvain   0,5657
+  - Leiden    0,5745
 
-  Kedua metode menghasilkan struktur komunitas yang jelas (modularity
-  berada pada rentang 0,3 - 0,7). Leiden memberikan modularity sedikit
-  lebih tinggi, komunitas yang dijamin terhubung, serta hasil yang dapat
-  direproduksi, sehingga digunakan sebagai hasil utama.
+  Kedua metode menghasilkan struktur komunitas yang jelas (modularity berada pada rentang 0,3 - 0,7). Leiden memberikan modularity sedikit lebih tinggi, komunitas yang dijamin terhubung, serta hasil yang dapat direproduksi, sehingga digunakan sebagai hasil utama.
 
+  Visualisasi graf dibuat menggunakan Python dan PyVis dalam format HTML interaktif. File tersedia di repository dan dapat diunduh untuk dibuka langsung melalui browser.
+  - Louvain : visualisasi_louvain.html
+  - Leiden : visualisasi_leiden.html
 
 ## BATASAN PROYEK
 
