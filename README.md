@@ -69,13 +69,19 @@ File yang tidak digunakan:
 ## MODEL GRAF
 
 Node:
+
   User    userId               610 node
+  
   Movie   movieId, title       9.742 node
+  
   Genre   genre                20 node
 
 Relasi:
+
   (User)-[:RATED {rating, timestamp}]->(Movie)    100.836 relasi
+  
   (Movie)-[:HAS]->(Genre)                          22.084 relasi
+  
   (User)-[:SIMILAR {score}]->(User)                 6.090 relasi *
 
   * Relasi SIMILAR tidak berasal dari dataset, melainkan hasil
